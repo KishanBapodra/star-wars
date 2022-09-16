@@ -7,7 +7,10 @@ module.exports = {
     extend: {
       fontFamily: {
         galaxy: ["SF Distant Galaxy", "regular"],
-      }
+      },
+      backgroundImage: {
+        'star-wars-1': "url('/src/assets/star-wars.jpg')",
+      },
     },
   },
   plugins: [],
