@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "SF Distant Galaxy";
+    src: url("../public/SFDistantGalaxy.ttf");
+}

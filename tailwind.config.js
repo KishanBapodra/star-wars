@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        galaxy: ["SF Distant Galaxy", "regular"],
+      }
+    },
   },
   plugins: [],
 }
