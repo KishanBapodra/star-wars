@@ -12,7 +12,7 @@ const Films = (url) => {
     return(
         <>
             {films.map((ele,i) => {
-                return(<li key={i} className="text-[#9B9BA2] list-none">{ele}</li>)
+                return(<p key={i} className="text-[#9B9BA2] list-none">{ele}</p>)
             })}
         </>
     );
