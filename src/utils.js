@@ -21,7 +21,7 @@ export const fetchMovies = async (url) => {
   }
 }
 
-export const fetchSpecies = async (url) => {
+export const fetchSpecies = async () => {
   
   let results = [];
 
