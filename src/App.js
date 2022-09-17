@@ -35,7 +35,7 @@ const App = () => {
         <nav className="text-center p-10 min-h-fit font-galaxy text-4xl">
           <div className='flex justify-between items-center'>
             <h1 className='text-white'>STAR WARS</h1>
-            <button className='p-2 text-white text-sm bg-neutral-500 rounded-full' onClick={() => setToggle(!toggle)}>toggle</button>
+            <motion.button whileHover={{scale: [1,1.1,1,1.1,1]}} className='p-2 text-white text-sm bg-neutral-500 rounded-full' onClick={() => setToggle(!toggle)}>toggle</motion.button>
           </div>
           <div className='mt-10'>
             {planets.map((planet,i) => {
