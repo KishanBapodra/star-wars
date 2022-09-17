@@ -1,12 +1,12 @@
 import React, {useEffect, useState} from "react";
 import { fetchMovies } from "../utils";
 
-const Films = (url) => {
+const Films = ({url}) => {
     
     const [films, setFilms] = useState([]);
     
     useEffect(()=> {
-        fetchMovies(url.films).then(res => setFilms(res));
+        fetchMovies(url).then(res => setFilms(res));
     }, []);
 
     return(

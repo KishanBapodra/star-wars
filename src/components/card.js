@@ -1,21 +1,25 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import Films from "./film";
 import PlanetCreated from "./planetCreated";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilm } from "@fortawesome/free-solid-svg-icons";
 
-const Card = ({planet}) => {
-     
+const Card = ({planet, toggle}) => {
+    
+    const [films, setFilms] = useState(planet.films);
+
+    
     return(
         <div className="m-2 py-3 px-8 text-white flex justify-between rounded-lg bg-[#2B2B2E]">
             <div className="flex flex-col justify-between h-full pb-5  ">
-                {/* <p className="text-[#E5BC59] text-left">{planet.created}</p> */}
                 <PlanetCreated created={planet.created} />
                 <div className="pt-3 flex items-center">
                     <FontAwesomeIcon className="text-2xl" icon={faFilm} />
                     <div className="text-left text-lg ml-8">
                         <h1 className="font-extrabold">{planet.name}</h1>
-                        <Films films={planet.films} />
+
+                        <Films url={films}/>
+
                     </div>
                 </div>
             </div>
